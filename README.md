@@ -1,6 +1,6 @@
 # 🚢 Dock
 
-**Dock** is an ambitious attempt at recreating the cloud-hosting experience of platforms like Vercel, but with full control on your own VPS! Easily deploy, scale, and manage your web applications without compromising on flexibility. 🌐🚀
+**Dock** is a personal project aimed at learning how cloud platforms work, inspired by tools like Tsuru and PaaSTa. It is an ambitious attempt at recreating the cloud-hosting experience of platforms like Vercel, but with full control on your own VPS! Easily deploy, scale, and manage your web applications without compromising on flexibility. 🌐🚀
 
 ---
 
@@ -13,6 +13,7 @@
 - [Configuration](#-configuration)
 - [Contributing](#-contributing)
 - [License](#-license)
+
 
 ---
 
