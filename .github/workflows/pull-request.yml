@@ -8,18 +8,18 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        node-version: [18.18.0]
+        node-version: [20.11.0]
     steps:
     - uses: actions/checkout@v3
-    - uses: pnpm/action-setup@v3
+    - uses: oven-sh/setup-bun@v2
       with:
-        version: 8
+        bun-version: latest
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'pnpm'
+        cache: 'bun'
     - name: Install dependencies
-      run: pnpm install
-    - name: Run Build
-      run: pnpm build
+      run: bun install
+    - name: bun Build
+      run: bun build
