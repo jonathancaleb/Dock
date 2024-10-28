@@ -42,6 +42,7 @@ export const projectRouter = createTRPCRouter({
 				if (ctx.user.rol === "user") {
 					await addNewProject(ctx.user.authId, project.projectId);
 				}
+				return project;
 			} catch (error) {
 				console.log(error);
 				throw new TRPCError({
